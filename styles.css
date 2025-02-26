@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+:root {
+  /* Colors */
+
+  /* Primary */
+  --dark-gray: hsl(0, 0%, 63%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --very-dark-gray: hsl(0, 0%, 27%);
+  --font: "League Spartan", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: var(--font);
+}
+body {
+  position: relative;
+  /* min-height: vh;   */
+}
+.hidden {
+  display: none;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  z-index: 100;
+  top: 3rem;
+  left: 2rem;
+  #actual_links {
+    margin-left: 2rem;
+    transform: translateY(-2px);
+  }
+  a {
+    text-decoration: none;
+    color: var(--white) !important;
+    font-family: var(--font);
+    font-size: larger;
+    margin-left: 10px;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  #stuff_that_changes {
+    display: flex;
+    /* grid-template-columns: 60% 40%; */
+    flex-direction: row;
+    height: 70vh;
+  }
+
+  #img_change {
+    img {
+      width: 110%;
+      max-height: 100%;
+    }
+  }
+  #text_and_btns {
+    position: relative;
+    display: block;
+  }
+  .title {
+    font-size: 40px;
+    font-weight: 700;
+    word-wrap: normal;
+    width: 25rem;
+  }
+  .info_para {
+    margin-top: 20px;
+    color: var(--dark-gray);
+    line-height: 20px;
+    width: 26rem;
+    word-wrap: break-word;
+  }
+  #move {
+    position: absolute;
+    bottom: 0;
+    left: 4.8rem;
+    display: flex;
+    flex-direction: row;
+    #move_left,
+    #move_right {
+      background-color: var(--black);
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+#about {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  /* bottom: 0; */
+  overflow: hidden;
+  max-height: 30vh;
+  width: 100%;
+  img {
+    height: auto;
+    max-height: 100%;
+  }
+  #left_About{
+    float: right;
+  }
+  #about_title {
+    margin-top: 3rem;
+    margin-bottom: 0.7rem;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+  }
+  #about_para {
+    color: var(--dark-gray);
+    width: 31rem;
+    word-wrap: break-word;
+  }
+}
+#shop_now {
+  background: none;
+  outline: none;
+  border: none;
+  margin-top: 15px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+a:-webkit-any-link {
+  color: black;
+}
+#text_part_for_margin {
+  margin-left: 11rem;
+  margin-top: 6rem;
+}

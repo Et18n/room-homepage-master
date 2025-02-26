@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script defer src="index.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Room homepage</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/"><img src="./images/logo.svg" alt="" /></a>
+      <div id="actual_links">
+        <a href="/home">home</a>
+        <a href="/shop">shop</a>
+        <a href="/about">about</a>
+        <a href="/contact">contact</a>
+      </div>
+    </nav>
+    <main>
+      <div id="stuff_that_changes">
+        <div id="img_change">
+          <img id="image_change" src="images/desktop-image-hero-1.jpg" alt="" />
+        </div>
+        <div id="text_and_btns">
+          <div id="text_part_for_margin">
+            <div id="pg_1">
+              <div class="title" id="title">
+                Discover innovative ways to decorate
+              </div>
+
+              <p class="info_para" id="info_para">
+                We provide unmatched quality, comfort, and style for property
+                owners across the country. Our experts combine form and function
+                in bringing your vision to life. Create a room in your own style
+                with our collection and make your property a reflection of you
+                and what you love.
+              </p>
+            </div>
+
+            <div id="pg_2 " class="hidden">
+              <div class="title">We are available all across the globe</div>
+              <p class="info_para">
+                With stores all over the world, it's easy for you to find
+                furniture for your home or place of business. Locally, we're in
+                most major cities throughout the country. Find the branch
+                nearest you using our store locator. Any questions? Don't
+                hesitate to contact us today.
+              </p>
+            </div>
+            <div id="pg_3" class="hidden">
+              <div class="title">Manufactured with the best materials</div>
+              <p class="info_para">
+                Our modern furniture store provide a high level of quality. Our
+                company has invested in advanced technology to ensure that every
+                product is made as perfect and as consistent as possible. With
+                three decades of experience in this industry, we understand what
+                customers want for their home and office.
+              </p>
+            </div>
+
+            <button id="shop_now">
+              <a href="/">
+                Shop now
+                <span><img src="images/icon-arrow.svg" alt="" /></span
+              ></a>
+            </button>
+          </div>
+          <div id="move">
+            <div class="move_left">
+              <button id="move_left">
+                <img src="images/icon-angle-left.svg" alt="" />
+              </button>
+            </div>
+            <div class="move_right">
+              <button id="move_right">
+                <img src="images/icon-angle-right.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="about">
+        <div><img src="./images/image-about-dark.jpg" alt="" /></div>
+        <div class="about">
+          <div id="about_title">About our furniture</div>
+          <div id="about_para">
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </div>
+        </div>
+        <div>
+          <img src="/images/image-about-light.jpg" alt="" id="left_About" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
