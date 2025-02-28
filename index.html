@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <script defer src="index.js"></script>
     <link
       rel="icon"
@@ -17,8 +16,21 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div id="overlay" class="hidden"></div>
     <a href="/"><img src="./images/logo.svg" alt="logo" id="logo" /></a>
-    <nav>
+    <img
+      id="ham"
+      class="hidden"
+      src="images/icon-hamburger.svg"
+      alt="hamburger_menu  "
+    />
+    <img
+      id="close"
+      src="images/icon-close.svg"
+      alt="ham_close"
+      class="hidden"
+    />
+    <nav id="nav">
       <div id="actual_links">
         <a href="/home">home</a>
         <a href="/shop">shop</a>

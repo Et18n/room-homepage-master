@@ -67,3 +67,27 @@ left_btn.addEventListener("click", () => {
     document.getElementById("image_change").src = changes_arr[index].img_mob;
   }
 });
+
+let navbar = document.getElementById("nav");
+let overlay = document.getElementById("overlay");
+let ham = document.getElementById("ham");
+let close = document.getElementById("close");
+
+if (!query.matches) {
+  navbar.classList.add("hidden");
+  ham.classList.remove("hidden");
+}
+ham.addEventListener("click", () => {
+  ham.classList.toggle("hidden");
+  close.classList.toggle("hidden");
+  navbar.classList.toggle("hamburger_menu");
+  navbar.classList.toggle("hidden");
+  overlay.classList.toggle("hidden");
+});
+close.addEventListener("click", () => {
+  ham.classList.toggle("hidden");
+  close.classList.toggle("hidden");
+  navbar.classList.toggle("hamburger_menu");
+  navbar.classList.toggle("hidden");
+  overlay.classList.toggle("hidden");
+});
