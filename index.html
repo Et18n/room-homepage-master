@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a href="/"><img src="./images/logo.svg" alt="logo" id="logo" /></a>
     <nav>
-      <a href="/"><img src="./images/logo.svg" alt="" /></a>
       <div id="actual_links">
         <a href="/home">home</a>
         <a href="/shop">shop</a>
@@ -29,7 +29,11 @@
     <main>
       <div id="stuff_that_changes">
         <div id="img_change">
-          <img id="image_change" src="images/desktop-image-hero-1.jpg" alt="" />
+          <img
+            id="image_change"
+            src="images/desktop-image-hero-1.jpg"
+            alt="hero_img"
+          />
         </div>
         <div id="text_and_btns">
           <div id="text_part_for_margin">
@@ -71,21 +75,22 @@
             <button id="shop_now">
               <a href="/">
                 Shop now
-                <span><img src="images/icon-arrow.svg" alt="" /></span
+                <span
+                  ><img
+                    class="icon_arrow"
+                    src="images/icon-arrow.svg"
+                    alt="" /></span
               ></a>
             </button>
           </div>
           <div id="move">
-            <div class="move_left">
-              <button id="move_left">
-                <img src="images/icon-angle-left.svg" alt="" />
-              </button>
-            </div>
-            <div class="move_right">
-              <button id="move_right">
-                <img src="images/icon-angle-right.svg" alt="" />
-              </button>
-            </div>
+            <button id="move_left">
+              <img src="images/icon-angle-left.svg" alt="" />
+            </button>
+
+            <button id="move_right">
+              <img src="images/icon-angle-right.svg" alt="" />
+            </button>
           </div>
         </div>
       </div>
